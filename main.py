@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 import sqlite3
 import collections
-import uvicorn
+import subprocess
 
 app = FastAPI()
 
@@ -55,4 +55,4 @@ async def data(lastnameletter:str=None,limit:int=50,page:int=0,start_year:int=No
         return raw_data
 
 if __name__ == "__main__":
-    uvicorn.run(app,host="0.0.0.0",port="8080")
+    subprocess.run(["python", "-m", "uvicorn", "main:app", "--reload"])
