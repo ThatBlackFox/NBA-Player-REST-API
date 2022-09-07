@@ -3,7 +3,7 @@
 ## **INFO:**
 * ### Serves from an internal SQL database
 * ### A RESTful API using Fast API
-* ### Response is served in JSON
+* ### The response is served in JSON
 * ### Allows for users to use pagination and limits
 * ### Uses multiple optimizations to reduce response time and
 * ### Reduced bandwidth resources
@@ -11,7 +11,7 @@
 ## **MODULES:**
 
 * ### FastAPI
-* ### uvcorn
+* ### uvicorn
 
 ## **BRIEF:**
 
